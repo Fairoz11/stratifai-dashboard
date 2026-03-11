@@ -9,7 +9,6 @@ const Header = ({ onMenuClick }) => {
 
     return (
         <header className="bg-white border-b border-gray-100 flex flex-col w-full max-w-[1220px] z-10 shrink-0">
-            {/* Top Section */}
             <div className="pt-2 md:pt-3 px-4 md:px-[30px] pb-4 flex items-center justify-between gap-4">
                 <div className="flex items-center gap-4">
                     <button
@@ -35,7 +34,6 @@ const Header = ({ onMenuClick }) => {
                 </div>
             </div>
 
-            {/* Tabs Section */}
             <div className="px-4 md:px-[20px] flex items-center gap-[30px] border-b border-[#CBD5E1] h-[43px] overflow-x-auto scrollbar-hide">
                 {tabs.map((tab) => (
                     <button

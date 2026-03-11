@@ -20,7 +20,6 @@ const DashboardPage = () => {
                 <Header onMenuClick={toggleSidebar} />
 
                 <div className="flex-1 overflow-y-auto p-4 md:p-8 space-y-[20px] max-w-[1220px] mx-auto w-full">
-                    {/* Sub-header */}
                     <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-[30px]">
                         <div className="flex w-full sm:w-auto overflow-x-auto">
                             <button className="px-6 py-2 text-[14px] font-semibold bg-[#F0F2FD] text-[#405AE8] border border-[#405AE8] rounded-[4px] whitespace-nowrap z-10 leading-[144%] align-middle">
@@ -35,7 +34,6 @@ const DashboardPage = () => {
                         </button>
                     </div>
 
-                    {/* Top Row: Stats, Performance, and Chart */}
                     <div className="grid grid-cols-1 lg:grid-cols-12 gap-[20px]">
                         <div className="lg:col-span-4 space-y-[20px]">
                             <StatCard
@@ -60,7 +58,6 @@ const DashboardPage = () => {
                         </div>
                     </div>
 
-                    {/* Bottom Row: Asset Allocation */}
                     <div className="w-full">
                         <AssetAllocation data={mockData.allocation} />
                     </div>
